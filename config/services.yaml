@@ -1,5 +1,5 @@
 parameters:
-    secret: gOMgeUI/sPg+iUqNm2YHIK9SOGE5GEm72f7xI6TXI4c=
+    secret: '%env(PIMCORE_SECRET)%'
     
     # use echo \Defuse\Crypto\Key::createNewRandomKey()->saveToAsciiSafeString(); to generate secret for data encryption
     app_encryption_secret: "xtOBiGa7R8pQfr8wU0ROH/geImSrHUAlZ3yDLAiqWPU="
