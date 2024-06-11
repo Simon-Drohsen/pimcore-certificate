@@ -13,6 +13,7 @@
 /.env.*.local
 !/config/local
 /config/local/*
+/config/pimcore/google-api-private-key.json
 !config/local/.gitkeep
 /docker-compose.override.yml
 
