@@ -43,6 +43,15 @@ class DefaultController extends BaseController
         return [];
     }
 
+    public function academyAction(Request $request)
+    {
+        // do some stuff
+
+
+
+        return $this->render('default/academy.html.twig', []);
+    }
+
     public function genericMailAction(): Response
     {
         return $this->render('default/generic_mail.html.twig');

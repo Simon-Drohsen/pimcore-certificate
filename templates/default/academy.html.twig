@@ -1,0 +1,13 @@
+{% extends 'layouts/layout.html.twig' %}
+
+{% block content %}
+
+    {{ document.property('foo') }}
+
+    <h2>{{ pimcore_input('headline') }}</h2>
+
+    {{ pimcore_areablock('content',{
+        'allowed': ['academy', 'image', 'wysiwyg']
+    }) }}
+
+{% endblock %}

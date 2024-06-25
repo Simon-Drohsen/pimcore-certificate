@@ -14,7 +14,7 @@
 
 use Pimcore\Bootstrap;
 use Pimcore\Tool;
-use Symfony\Component\Debug\Debug;
+// use Symfony\Component\Debug\Debug;
 use Symfony\Component\HttpFoundation\Request;
 
 require_once dirname(__DIR__).'/vendor/autoload_runtime.php';
@@ -26,7 +26,7 @@ return function (Request $request, array $context) {
     // set current request as property on tool as there's no
     // request stack available yet
     Tool::setCurrentRequest($request);
-    
+
     Bootstrap::bootstrap();
     $kernel = Bootstrap::kernel();
 

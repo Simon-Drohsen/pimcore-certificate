@@ -1,0 +1,15 @@
+<p>{{ pimcore_wysiwyg('content') }}</p>
+
+{% if editmode %}
+
+    <p>Add some image here</p>
+
+    {{ pimcore_image('image', {
+        'thumbnail' : 'exampleRotate'
+    }) }}
+
+{% else %}
+    {% if not pimcore_image('image').isEmpty() %}
+        <img src="{{ pimcore_image('image').getThumbnail('exampleRotate') }}" />
+    {% endif %}
+{% endif %}
